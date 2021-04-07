@@ -1,0 +1,600 @@
+object FormFileEditor: TFormFileEditor
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = Single
+  Caption = 'Form2'
+  ClientHeight = 630
+  ClientWidth = 894
+  Position = DesktopCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  DesignerMasterStyle = 0
+  object Panel2: TPanel
+    Align = Client
+    Size.Width = 894.000000000000000000
+    Size.Height = 557.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Panel1: TPanel
+      Align = Left
+      Size.Width = 350.000000000000000000
+      Size.Height = 557.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'pushpanel'
+      TabOrder = 0
+      object gb_sequential: TGroupBox
+        Align = Top
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 2.500000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 340.000000000000000000
+        Size.Height = 60.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Sequential or Unsiquential Files'
+        TabOrder = 0
+        object rb_sequential: TRadioButton
+          Align = Left
+          Margins.Left = 20.000000000000000000
+          Margins.Top = 20.000000000000000000
+          Margins.Right = 20.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Position.X = 20.000000000000000000
+          Position.Y = 20.000000000000000000
+          Size.Width = 130.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Sequential Files '
+          OnChange = rb_sequentialChange
+        end
+        object rb_unsequential: TRadioButton
+          Align = Left
+          IsChecked = True
+          Margins.Left = 20.000000000000000000
+          Margins.Top = 20.000000000000000000
+          Margins.Right = 20.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Position.X = 190.000000000000000000
+          Position.Y = 20.000000000000000000
+          Size.Width = 130.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = 'Un-Sequential Files'
+          OnChange = rb_unsequentialChange
+        end
+      end
+      object Panel4: TPanel
+        Align = Top
+        Enabled = False
+        Margins.Left = 6.500000000000000000
+        Margins.Top = 2.500000000000000000
+        Margins.Right = 6.500000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 6.500000000000000000
+        Position.Y = 70.000000000000000000
+        Size.Width = 337.000000000000000000
+        Size.Height = 66.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Panel12: TPanel
+          Align = Client
+          Size.Width = 47.000000000000000000
+          Size.Height = 66.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'pushpanel'
+          TabOrder = 1
+          object SpeedButton4: TSpeedButton
+            Align = Client
+            Size.Width = 47.000000000000000000
+            Size.Height = 39.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'trashtoolbuttonbordered'
+            Text = 'SpeedButton4'
+            OnClick = SpeedButton4Click
+          end
+          object SpeedButton5: TSpeedButton
+            Align = Top
+            Margins.Left = 1.000000000000000000
+            Margins.Top = 4.000000000000000000
+            Margins.Bottom = 1.000000000000000000
+            Position.X = 1.000000000000000000
+            Position.Y = 4.000000000000000000
+            Size.Width = 46.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'addtoolbuttonbordered'
+            Text = 'SpeedButton5'
+            OnClick = SpeedButton5Click
+          end
+        end
+        object Panel13: TPanel
+          Align = Left
+          Size.Width = 290.000000000000000000
+          Size.Height = 66.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'pushpanel'
+          TabOrder = 2
+          object Label2: TLabel
+            Align = Left
+            Margins.Top = 2.000000000000000000
+            Margins.Bottom = 2.000000000000000000
+            Position.X = 130.000000000000000000
+            Position.Y = 2.000000000000000000
+            Size.Width = 41.000000000000000000
+            Size.Height = 62.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.HorzAlign = Center
+            Text = 'TO'
+          end
+          object Panel10: TPanel
+            Align = Left
+            Margins.Left = 1.000000000000000000
+            Margins.Top = 1.000000000000000000
+            Margins.Right = 1.000000000000000000
+            Margins.Bottom = 1.000000000000000000
+            Position.X = 1.000000000000000000
+            Position.Y = 1.000000000000000000
+            Size.Width = 128.000000000000000000
+            Size.Height = 64.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'pushpanel'
+            TabOrder = 1
+            object edt_start_files: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              TabOrder = 0
+              Text = '0'
+              TextSettings.Font.Size = 18.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              Margins.Left = 4.000000000000000000
+              Margins.Top = 2.000000000000000000
+              Margins.Right = 4.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Size.Width = 120.000000000000000000
+              Size.Height = 40.000000000000000000
+              Size.PlatformDefault = False
+              StyledSettings = [Family, FontColor]
+              OnKeyUp = edt_start_filesKeyUp
+            end
+            object Label1: TLabel
+              Align = Top
+              Margins.Left = 2.000000000000000000
+              Margins.Top = 2.000000000000000000
+              Margins.Right = 2.000000000000000000
+              Margins.Bottom = 1.000000000000000000
+              Position.X = 2.000000000000000000
+              Position.Y = 2.000000000000000000
+              Size.Width = 124.000000000000000000
+              Size.Height = 15.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.HorzAlign = Center
+              Text = 'START'
+            end
+          end
+          object Panel11: TPanel
+            Align = Client
+            Margins.Left = 1.000000000000000000
+            Margins.Top = 1.000000000000000000
+            Margins.Right = 1.000000000000000000
+            Margins.Bottom = 1.000000000000000000
+            Size.Width = 117.000000000000000000
+            Size.Height = 64.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'pushpanel'
+            TabOrder = 2
+            object edt_end_files: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              TabOrder = 0
+              Text = '0'
+              TextSettings.Font.Size = 18.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              Margins.Left = 4.000000000000000000
+              Margins.Top = 2.000000000000000000
+              Margins.Right = 4.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Size.Width = 109.000000000000000000
+              Size.Height = 40.000000000000000000
+              Size.PlatformDefault = False
+              StyledSettings = [Family, FontColor]
+              OnKeyUp = edt_end_filesKeyUp
+            end
+            object Label3: TLabel
+              Align = Top
+              Margins.Left = 2.000000000000000000
+              Margins.Top = 2.000000000000000000
+              Margins.Right = 2.000000000000000000
+              Margins.Bottom = 1.000000000000000000
+              Position.X = 2.000000000000000000
+              Position.Y = 2.000000000000000000
+              Size.Width = 113.000000000000000000
+              Size.Height = 15.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.HorzAlign = Center
+              Text = 'END'
+            end
+          end
+        end
+      end
+      object Panel5: TPanel
+        Align = Top
+        Margins.Left = 6.500000000000000000
+        Margins.Top = 2.500000000000000000
+        Margins.Right = 6.500000000000000000
+        Margins.Bottom = 2.500000000000000000
+        Position.X = 6.500000000000000000
+        Position.Y = 143.500000000000000000
+        Size.Width = 337.000000000000000000
+        Size.Height = 217.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object ListBox1: TListBox
+          Align = Left
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 2.500000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Position.X = 5.000000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 148.000000000000000000
+          Size.Height = 207.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          DisableFocusEffect = True
+          DefaultItemStyles.ItemStyle = ''
+          DefaultItemStyles.GroupHeaderStyle = ''
+          DefaultItemStyles.GroupFooterStyle = ''
+          Viewport.Width = 144.000000000000000000
+          Viewport.Height = 203.000000000000000000
+        end
+        object Panel6: TPanel
+          Align = Left
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Margins.Left = 2.500000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Position.X = 158.000000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 174.000000000000000000
+          Size.Height = 207.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'pushpanel'
+          TabOrder = 1
+          object Button1: TButton
+            Align = Top
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 2.500000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 24.000000000000000000
+            Size.Width = 164.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'ADD'
+            OnClick = Button1Click
+            object SpeedButton3: TSpeedButton
+              Align = Right
+              Position.X = 134.000000000000000000
+              Size.Width = 30.000000000000000000
+              Size.Height = 35.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'refreshtoolbuttonbordered'
+              Text = 'SpeedButton3'
+              OnClick = SpeedButton3Click
+            end
+          end
+          object Button2: TButton
+            Align = Top
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 2.500000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 64.000000000000000000
+            Size.Width = 164.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            Text = 'DELETE'
+            OnClick = Button2Click
+            object SpeedButton2: TSpeedButton
+              Align = Right
+              Hint = 'Deletes all the Items in the List'
+              Position.X = 134.000000000000000000
+              Size.Width = 30.000000000000000000
+              Size.Height = 35.000000000000000000
+              Size.PlatformDefault = False
+              ParentShowHint = False
+              ShowHint = True
+              StyleLookup = 'trashtoolbuttonbordered'
+              Text = 'SpeedButton2'
+              OnClick = SpeedButton2Click
+            end
+          end
+          object Label4: TLabel
+            Align = MostTop
+            Size.Width = 174.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.HorzAlign = Center
+            Text = 'Control Files to be Made'
+          end
+          object Line1: TLine
+            Align = Top
+            LineType = Top
+            Position.Y = 17.000000000000000000
+            Size.Width = 174.000000000000000000
+            Size.Height = 2.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object Label5: TLabel
+            Align = Top
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 109.000000000000000000
+            Size.Width = 164.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.HorzAlign = Center
+            Text = 'Total Number of Files Added'
+          end
+          object Line2: TLine
+            Align = Top
+            LineType = Top
+            Position.Y = 131.000000000000000000
+            Size.Width = 174.000000000000000000
+            Size.Height = 2.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object edt_num_files: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Top
+            TabOrder = 6
+            Text = '0'
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.HorzAlign = Center
+            Position.X = 5.000000000000000000
+            Position.Y = 138.000000000000000000
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 2.500000000000000000
+            Size.Width = 164.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            StyledSettings = [Family, FontColor]
+          end
+          object btn_change_num_files: TButton
+            Align = Top
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 2.500000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 183.000000000000000000
+            Size.Width = 164.000000000000000000
+            Size.Height = 20.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 7
+            Text = 'Change Number of Files'
+            ParentShowHint = False
+            ShowHint = False
+            OnClick = btn_change_num_filesClick
+          end
+        end
+      end
+      object Panel7: TPanel
+        Align = Top
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 2.500000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 368.000000000000000000
+        Size.Width = 340.000000000000000000
+        Size.Height = 140.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        object Panel8: TPanel
+          Align = Top
+          Margins.Left = 1.000000000000000000
+          Margins.Top = 1.000000000000000000
+          Margins.Right = 1.000000000000000000
+          Margins.Bottom = 1.000000000000000000
+          Position.X = 1.000000000000000000
+          Position.Y = 1.000000000000000000
+          Size.Width = 338.000000000000000000
+          Size.Height = 65.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'pushpanel'
+          TabOrder = 0
+          object Label6: TLabel
+            Align = Top
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 5.000000000000000000
+            Size.Width = 328.000000000000000000
+            Size.Height = 20.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'File Type'
+          end
+          object ComboEdit1: TComboEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Top
+            TabOrder = 1
+            ItemHeight = 19.000000000000000000
+            ItemIndex = -1
+            Position.X = 5.000000000000000000
+            Position.Y = 35.000000000000000000
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Size.Width = 328.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object Panel9: TPanel
+          Align = Top
+          Margins.Left = 1.000000000000000000
+          Margins.Top = 1.000000000000000000
+          Margins.Right = 1.000000000000000000
+          Margins.Bottom = 1.000000000000000000
+          Position.X = 1.000000000000000000
+          Position.Y = 68.000000000000000000
+          Size.Width = 338.000000000000000000
+          Size.Height = 65.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'pushpanel'
+          TabOrder = 1
+          object Label7: TLabel
+            Align = Top
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 5.000000000000000000
+            Size.Width = 328.000000000000000000
+            Size.Height = 20.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'File Location'
+          end
+          object Panel15: TPanel
+            Align = Top
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 35.000000000000000000
+            Size.Width = 328.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'pushpanel'
+            TabOrder = 2
+            object edt_File_Location: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Left
+              TabOrder = 0
+              Text = 'C:\'
+              TextSettings.Font.Size = 11.000000000000000000
+              Size.Width = 308.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              StyledSettings = [Family, FontColor]
+              ParentShowHint = False
+              ShowHint = True
+            end
+            object SpeedButton1: TSpeedButton
+              Align = Client
+              Margins.Left = 3.000000000000000000
+              Size.Width = 17.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'ellipseseditbutton'
+              Text = 'SpeedButton1'
+              OnClick = SpeedButton1Click
+            end
+          end
+        end
+      end
+      object Button3: TButton
+        Align = Client
+        Hint = 'Create Files'
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 2.500000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Size.Width = 340.000000000000000000
+        Size.Height = 39.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'arrowrighttoolbutton'
+        TabOrder = 4
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = Button3Click
+      end
+    end
+    object Panel3: TPanel
+      Align = Client
+      Size.Width = 544.000000000000000000
+      Size.Height = 557.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'pushpanel'
+      TabOrder = 1
+      object Memo1: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        ShowSizeGrip = True
+        Align = Contents
+        Hint = 'Below is the content of the files to be created'
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Size.Width = 534.000000000000000000
+        Size.Height = 547.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        ParentShowHint = False
+        ShowHint = True
+        Viewport.Width = 530.000000000000000000
+        Viewport.Height = 543.000000000000000000
+      end
+    end
+  end
+  object ToolBar1: TToolBar
+    Size.Width = 894.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object SpeedButton6: TSpeedButton
+      Align = Left
+      Size.Width = 49.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'priortoolbuttonbordered'
+      Text = 'SpeedButton6'
+      OnClick = SpeedButton6Click
+    end
+  end
+  object Panel14: TPanel
+    Align = MostBottom
+    Position.Y = 597.000000000000000000
+    Size.Width = 894.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object ProgressBar1: TProgressBar
+      Align = Contents
+      Orientation = Horizontal
+      Margins.Left = 2.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 2.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Size.Width = 890.000000000000000000
+      Size.Height = 29.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+end

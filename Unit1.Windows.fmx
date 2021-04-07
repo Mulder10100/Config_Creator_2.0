@@ -1,0 +1,191 @@
+inherited FormMain_Windows: TFormMain_Windows
+  ClientHeight = 851
+  ClientWidth = 931
+  DesignerMasterStyle = 0
+  inherited mem_info: TMemo
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    Size.Width = 931.000000000000000000
+    Size.Height = 658.000000000000000000
+    Viewport.Width = 927.000000000000000000
+    Viewport.Height = 654.000000000000000000
+  end
+  inherited pnl_main: TPanel
+    Size.Width = 931.000000000000000000
+    inherited pnl_firmware_upgrade: TPanel
+      inherited Label1: TLabel
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+      inherited Line1: TLine
+        Size.Height = 33.000000000000000000
+      end
+    end
+    inherited pnl_server_config: TPanel
+      inherited Label2: TLabel
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Text = 'Server Configuration'
+      end
+    end
+    inherited pnl_main_sim: TPanel
+      Anchors = [akLeft, akTop, akRight, akBottom]
+      inherited pnl_dual_sim: TPanel
+        inherited Label3: TLabel
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+      end
+      inherited pnl_single_sim: TPanel
+        inherited Label4: TLabel
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          Text = 'Single Sim'
+        end
+      end
+      inherited Panel1: TPanel
+        inherited Label5: TLabel
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+      end
+    end
+  end
+  inherited pnl_file_output_options: TPanel
+    Size.Width = 931.000000000000000000
+    inherited spbtn_add: TSpeedButton
+      StyledSettings = [Family, Size, FontColor]
+    end
+    inherited SpeedButton1: TSpeedButton
+      Position.X = 893.000000000000000000
+    end
+  end
+  inherited Panel2: TPanel
+    Size.Width = 931.000000000000000000
+    inherited Panel3: TPanel
+      Size.Width = 931.000000000000000000
+      inherited Button1: TButton
+        Size.Width = 86.000000000000000000
+      end
+    end
+    inherited Panel4: TPanel
+      Size.Width = 921.000000000000000000
+      inherited Panel5: TPanel
+        inherited Panel11: TPanel
+          inherited Label14: TLabel
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+        end
+        inherited Panel12: TPanel
+          inherited Label15: TLabel
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+          inherited Panel18: TPanel
+            TabOrder = 8
+          end
+          inherited Panel19: TPanel
+            TabOrder = 11
+          end
+          inherited Panel22: TPanel
+            TabOrder = 7
+            inherited Panel23: TPanel
+              Position.Y = 27.000000000000000000
+            end
+            inherited Panel24: TPanel
+              Position.Y = 49.000000000000000000
+            end
+            inherited Label36: TLabel
+              Margins.Bottom = 2.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+            end
+            inherited Line9: TLine
+              Position.Y = 24.000000000000000000
+            end
+            inherited Panel25: TPanel
+              Position.Y = 71.000000000000000000
+            end
+          end
+        end
+      end
+      inherited Panel6: TPanel
+        Size.Width = 453.000000000000000000
+        TabOrder = 2
+        inherited Panel26: TPanel
+          Size.Width = 451.000000000000000000
+          inherited Label39: TLabel
+            Size.Width = 451.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+          inherited Line10: TLine
+            Size.Width = 441.000000000000000000
+          end
+          inherited Panel28: TPanel
+            Size.Width = 449.000000000000000000
+            inherited lbl_Sim_Priority: TLabel
+              Size.Width = 344.000000000000000000
+            end
+          end
+          inherited Panel29: TPanel
+            Size.Width = 449.000000000000000000
+            inherited lbl_Sim_1_IMEI: TLabel
+              Size.Width = 266.500000000000000000
+            end
+            inherited lbl_sim_1_provider: TLabel
+              Position.X = 374.000000000000000000
+            end
+          end
+          inherited Panel30: TPanel
+            Size.Width = 449.000000000000000000
+            inherited lbl_Sim_0_IMEI: TLabel
+              Size.Width = 269.000000000000000000
+            end
+            inherited lbl_Sim_0_provider: TLabel
+              Position.X = 374.000000000000000000
+            end
+          end
+          inherited Panel31: TPanel
+            Size.Width = 449.000000000000000000
+            inherited lbl_Sim_Inuse: TLabel
+              Size.Width = 344.000000000000000000
+            end
+          end
+        end
+        inherited Panel27: TPanel
+          Size.Width = 451.000000000000000000
+          inherited Label48: TLabel
+            Size.Width = 451.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+          inherited Line11: TLine
+            Size.Width = 441.000000000000000000
+          end
+          inherited Panel32: TPanel
+            Size.Width = 449.000000000000000000
+            inherited lbl_gsm_imei: TLabel
+              Size.Width = 354.000000000000000000
+            end
+          end
+          inherited Panel33: TPanel
+            Size.Width = 449.000000000000000000
+            inherited lbl_heartbeat: TLabel
+              Size.Width = 354.000000000000000000
+            end
+          end
+          inherited Panel34: TPanel
+            Size.Width = 449.000000000000000000
+            inherited lbl_debug_remote: TLabel
+              Size.Width = 324.000000000000000000
+            end
+          end
+          inherited Panel35: TPanel
+            Size.Width = 449.000000000000000000
+            inherited lbl_application_firmware: TLabel
+              Size.Width = 354.000000000000000000
+            end
+          end
+        end
+      end
+    end
+  end
+  inherited Panel17: TPanel
+    Size.Width = 931.000000000000000000
+    inherited Label57: TLabel
+      Size.Width = 931.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+  end
+end

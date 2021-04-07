@@ -1,0 +1,64 @@
+inherited FormFileEditor_Windows: TFormFileEditor_Windows
+  DesignerMasterStyle = 0
+  inherited Panel2: TPanel
+    inherited Panel1: TPanel
+      inherited Panel4: TPanel
+        inherited Panel12: TPanel
+          inherited SpeedButton4: TSpeedButton
+            Margins.Left = 2.000000000000000000
+            Margins.Top = 2.000000000000000000
+            Margins.Right = 2.000000000000000000
+            Margins.Bottom = 2.000000000000000000
+            Size.Width = 43.000000000000000000
+            Size.Height = 35.000000000000000000
+          end
+          inherited SpeedButton5: TSpeedButton
+            Margins.Right = 1.000000000000000000
+            Size.Width = 45.000000000000000000
+          end
+        end
+        inherited Panel13: TPanel
+          inherited Panel10: TPanel
+            inherited edt_start_files: TEdit
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+            end
+          end
+          inherited Panel11: TPanel
+            inherited edt_end_files: TEdit
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+            end
+          end
+        end
+      end
+      inherited Panel5: TPanel
+        inherited ListBox1: TListBox
+          Viewport.Width = 144.000000000000000000
+          Viewport.Height = 203.000000000000000000
+        end
+        inherited Panel6: TPanel
+          inherited edt_num_files: TEdit
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+        end
+      end
+      inherited Panel7: TPanel
+        inherited Panel9: TPanel
+          inherited Panel15: TPanel
+            inherited edt_File_Location: TEdit
+              Size.Width = 298.000000000000000000
+            end
+            inherited SpeedButton1: TSpeedButton
+              Size.Width = 27.000000000000000000
+            end
+          end
+        end
+      end
+    end
+    inherited Panel3: TPanel
+      inherited Memo1: TMemo
+        Viewport.Width = 530.000000000000000000
+        Viewport.Height = 543.000000000000000000
+      end
+    end
+  end
+end

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/11/25 20:25:06.000.455,=C:\Users\Private\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/12/05 13:44:19.000.211,=C:\Users\Private\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/12/05 15:34:40.000.165,C:\Users\Private\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Mulder\Coding\Software Tools\File Creator\Unit1.pas</Transaction>
+    <Transaction>2020/12/05 15:34:40.000.165,C:\Users\Private\Documents\Embarcadero\Studio\Projects\Unit1.fmx=C:\Mulder\Coding\Software Tools\File Creator\Unit1.fmx</Transaction>
+    <Transaction>2020/12/05 15:34:50.000.931,C:\Users\Private\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Mulder\Coding\Software Tools\File Creator\Project1.dproj</Transaction>
+    <Transaction>2021/01/10 11:47:02.000.873,=C:\Mulder\Coding\Delphi Apps\Software Tools\File Creator\Unit2.pas</Transaction>
+    <Transaction>2021/03/04 16:54:20.000.915,=D:\Personal\Coding\Delphi\Projects\Software Tools\File Creator\Unit3.pas</Transaction>
+    <Transaction>2021/03/12 21:41:32.000.165,=D:\Personal\Coding\Delphi\Projects\Software Tools\File Creator\Unit4.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile Android="Devtron_Phone"/>
+		<PNewMac iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>
